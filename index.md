@@ -1,27 +1,3 @@
-<link rel="stylesheet" href="style.css">
-body {
-  background-color: #0d0d0d;
-  color: #e0e0e0;
-  font-family: 'Courier New', monospace;
-  padding: 2rem;
-}
-
-a {
-  color: #00ffff;
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  border-bottom: 2px solid #00ffff;
-}
-
-
-<iframe src="Identidynamics.pdf" width="100%" height="600px"></iframe>
-
-
-
 # Identidynamics
 
 Welcome to the official repository of **Identidynamics**, a speculative physics framework authored by Mihai “Dorp”.
