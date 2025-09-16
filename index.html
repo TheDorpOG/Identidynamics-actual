@@ -103,25 +103,47 @@
   <!-- Your theory content goes here... -->
 
   <!-- Identibot HTML -->
-  <div id="identibot">
-    <div id="identibot-header">🤖 Ask Identibot</div>
-    <div id="identibot-log"></div>
-    <input type="text" id="identibot-input" placeholder="Ask me anything..." />
-  </div>
+ <script>
+  const identibotResponses = {
+    "e⁻": "E⁻ stands for electromagnetic field energy. It's the invisible stuff particles interact with.",
+    "energy particle": "An energy particle is a tiny structure that decides how field energy behaves—absorbed, channeled, or deflected.",
+    "quark": "Quarks are like logic gates. Up quarks attract field energy, Down quarks deflect it.",
+    "proton": "A proton is made of two Up quarks and one Down quark. It channels field energy, giving it a positive charge.",
+    "neutron": "A neutron has one Up and two Down quarks. It deflects field energy, so it stays neutral.",
+    "electron": "An electron absorbs field energy completely. That’s why it has a negative charge.",
+    "charge": "Charge isn’t built-in—it’s how a particle interacts with field energy.",
+    "field translation": "Field translation means shifting identity by interacting with electromagnetic energy.",
+    "simulation": "The simulation models how particles bend, absorb, or channel field lines—like a visual test of the theory.",
+    "falsifiability": "Falsifiability means the theory can be tested and potentially proven wrong. Identidynamics passed its test."
+  };
 
-  <!-- Identibot Script -->
-  <script>
-    const identibotResponses = {
-      "e⁻": "E⁻ stands for electromagnetic field energy. It's the invisible stuff particles interact with.",
-      "energy particle": "An energy particle is a tiny structure that decides how field energy behaves—absorbed, channeled, or deflected.",
-      "quark": "Quarks are like logic gates. Up quarks attract field energy, Down quarks deflect it.",
-      "proton": "A proton is made of two Up quarks and one Down quark. It channels field energy, giving it a positive charge.",
-      "neutron": "A neutron has one Up and two Down quarks. It deflects field energy, so it stays neutral.",
-      "electron": "An electron absorbs field energy completely. That’s why it has a negative charge.",
-      "charge": "Charge isn’t built-in—it’s how a particle interacts with field energy.",
-      "field translation": "Field translation means shifting identity by interacting with electromagnetic energy.",
-      "simulation": "The simulation models how particles bend, absorb, or channel field lines—like a visual test of the theory.",
-      "falsifiability": "Falsifiability means the theory can be tested and potentially proven wrong. Identidynamics passed its test."
+  document.addEventListener("DOMContentLoaded", function () {
+    const inputField = document.getElementById("identibot-input");
+    const log = document.getElementById("identibot-log");
+
+    inputField.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        const input = inputField.value.trim().toLowerCase();
+        if (!input) return;
+
+        log.innerHTML += `<div><strong>You:</strong> ${input}</div>`;
+
+        let response = "Hmm... I don't know that one yet. Try asking about quarks, charge, or E⁻.";
+        for (let keyword in identibotResponses) {
+          if (input.includes(keyword)) {
+            response = identibotResponses[keyword];
+            break;
+          }
+        }
+
+        log.innerHTML += `<div><strong>Identibot:</strong> ${response}</div>`;
+        inputField.value = "";
+        log.scrollTop = log.scrollHeight;
+      }
+    });
+  });
+</script>
+
     };
 
     document.getElementById("identibot-input").addEventListener("keydown", function (e) {
