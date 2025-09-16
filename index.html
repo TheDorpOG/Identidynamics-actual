@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Identidynamics – A field-translation framework for particle identity by Mihai." />
   <title>Identidynamics</title>
   <style>
     body {
@@ -22,148 +21,95 @@
       border-bottom: 2px solid #00ffff;
       padding-bottom: 0.5rem;
     }
-    a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-    blockquote {
-      margin: 2rem 0;
-      font-style: italic;
-      color: #999;
-      border-left: 4px solid #00ffff;
-      padding-left: 1rem;
+    .section {
+      margin-top: 2rem;
     }
     ul {
       list-style-type: square;
       margin-left: 2rem;
     }
-    .section {
-      margin-top: 2rem;
-    }
-    .table {
-      background-color: #1a1a1a;
-      border-collapse: collapse;
-      margin-top: 1rem;
-      width: 100%;
-    }
-    .table th, .table td {
-      border: 1px solid #444;
-      padding: 0.5rem;
-      text-align: left;
-    }
-    .table th {
-      background-color: #222;
-      color: #00ffff;
-    }
-
-    /* Identibot styles */
-    #identibot {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 260px;
-      background-color: #1a1a1a;
-      border: 1px solid #00ffff;
-      border-radius: 8px;
-      font-family: monospace;
-      z-index: 9999;
-      box-shadow: 0 0 10px #00ffff;
-    }
-    #identibot-header {
-      background-color: #00ffff;
-      color: #000;
-      padding: 8px;
-      font-weight: bold;
-      text-align: center;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-    }
-    #identibot-log {
-      max-height: 200px;
-      overflow-y: auto;
-      padding: 8px;
-      font-size: 0.9rem;
-    }
-    #identibot-input {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 6px;
-      border: none;
-      border-top: 1px solid #00ffff;
-      background-color: #0d0d0d;
-      color: #e0e0e0;
-    }
   </style>
 </head>
 <body>
-  <h1>Identidynamics</h1>
-  <p><strong>A Field-Translation Framework for Particle Identity</strong></p>
-  <p><em>Author: Mihai “Dorp”<br>Affiliation: Independent Theoretical Researcher<br>Date: 14 September 2025</em></p>
 
-  <!-- Your theory content goes here... -->
+  <!-- Simplified Assistant Section -->
+  <h1>Identidynamics Simplified</h1>
+  <p><em>By Mihai “Dorp” – Independent Theoretical Researcher</em></p>
+  <p><em>Date: 14 September 2025</em></p>
 
-  <!-- Identibot HTML -->
- <script>
-  const identibotResponses = {
-    "e⁻": "E⁻ stands for electromagnetic field energy. It's the invisible stuff particles interact with.",
-    "energy particle": "An energy particle is a tiny structure that decides how field energy behaves—absorbed, channeled, or deflected.",
-    "quark": "Quarks are like logic gates. Up quarks attract field energy, Down quarks deflect it.",
-    "proton": "A proton is made of two Up quarks and one Down quark. It channels field energy, giving it a positive charge.",
-    "neutron": "A neutron has one Up and two Down quarks. It deflects field energy, so it stays neutral.",
-    "electron": "An electron absorbs field energy completely. That’s why it has a negative charge.",
-    "charge": "Charge isn’t built-in—it’s how a particle interacts with field energy.",
-    "field translation": "Field translation means shifting identity by interacting with electromagnetic energy.",
-    "simulation": "The simulation models how particles bend, absorb, or channel field lines—like a visual test of the theory.",
-    "falsifiability": "Falsifiability means the theory can be tested and potentially proven wrong. Identidynamics passed its test."
-  };
+  <div class="section">
+    <h2>FIELD ENERGY</h2>
+    <p>Electromagnetic field energy (E⁻) is everywhere. It’s invisible, but particles interact with it constantly.</p>
+  </div>
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const inputField = document.getElementById("identibot-input");
-    const log = document.getElementById("identibot-log");
+  <div class="section">
+    <h2>ENERGY PARTICLES</h2>
+    <p>These are tiny structures that respond to field energy. How they respond defines their identity.</p>
+  </div>
 
-    inputField.addEventListener("keydown", function (e) {
-      if (e.key === "Enter") {
-        const input = inputField.value.trim().toLowerCase();
-        if (!input) return;
+  <div class="section">
+    <h2>CHARGE EMERGENCE</h2>
+    <ul>
+      <li>Absorption → Negative charge</li>
+      <li>Channeling → Positive charge</li>
+      <li>Deflection → Neutral identity</li>
+    </ul>
+  </div>
 
-        log.innerHTML += `<div><strong>You:</strong> ${input}</div>`;
+  <div class="section">
+    <h2>FIELD TRANSLATION</h2>
+    <p>Particles don’t just exist—they translate field energy. Identity is not fixed, it’s emergent.</p>
+  </div>
 
-        let response = "Hmm... I don't know that one yet. Try asking about quarks, charge, or E⁻.";
-        for (let keyword in identibotResponses) {
-          if (input.includes(keyword)) {
-            response = identibotResponses[keyword];
-            break;
-          }
-        }
+  <!-- Full Theory Section -->
+  <h1>Identidynamics: A Field-Translation Framework for Particle Identity</h1>
+  <p><strong>Author:</strong> Mihai “Dorp”<br><strong>Affiliation:</strong> Independent Theoretical Researcher<br><strong>Date:</strong> 14 September 2025</p>
 
-        log.innerHTML += `<div><strong>Identibot:</strong> ${response}</div>`;
-        inputField.value = "";
-        log.scrollTop = log.scrollHeight;
-      }
-    });
-  });
-</script>
+  <div class="section">
+    <h2>Abstract</h2>
+    <p>Identidynamics proposes a novel framework for understanding particle identity as a dynamic consequence of electromagnetic field translation...</p>
+  </div>
 
-    };
+  <div class="section">
+    <h2>1. Introduction</h2>
+    <p>The Standard Model of particle physics defines identity through fixed quantum properties...</p>
+  </div>
 
-    document.getElementById("identibot-input").addEventListener("keydown", function (e) {
-      if (e.key === "Enter") {
-        const input = this.value.toLowerCase();
-        const log = document.getElementById("identibot-log");
-        log.innerHTML += `<div><strong>You:</strong> ${input}</div>`;
-        let response = "Hmm... I don't know that one yet. Try asking about quarks, charge, or E⁻.";
-        for (let keyword in identibotResponses) {
-          if (input.includes(keyword)) {
-            response = identibotResponses[keyword];
-            break;
-          }
-        }
-        log.innerHTML += `<div><strong>Identibot:</strong> ${response}</div>`;
-        this.value = "";
-        log.scrollTop = log.scrollHeight;
-      }
-    });
-  </script>
+  <div class="section">
+    <h2>2. Theory</h2>
+    <h3>2.1 Energy Particles</h3>
+    <p>An energy particle is a localized structure that interacts with E⁻ and determines whether field energy is absorbed, channeled, or deflected...</p>
+
+    <h3>2.2 Quark Logic</h3>
+    <p>Quarks are modeled as specialized energy particles with directional field behavior...</p>
+    <ul>
+      <li>Proton (uud): Net attraction and channeling → Positive charge</li>
+      <li>Neutron (udd): Net deflection → Neutral identity</li>
+      <li>Electron: Pure absorption → Negative charge</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>3. Simulation</h2>
+    <p>A Python-based simulation was constructed to model field behavior around three particle types...</p>
+  </div>
+
+  <div class="section">
+    <h2>4. Results</h2>
+    <p>The simulation confirmed Identidynamic predictions...</p>
+  </div>
+
+  <div class="section">
+    <h2>5. Discussion</h2>
+    <p>Identidynamics reframes particle identity as a dynamic interaction with field energy...</p>
+  </div>
+
+  <div class="section">
+    <h2>6. Conclusion</h2>
+    <p>Identidynamics presents a coherent, falsifiable framework for particle identity based on electromagnetic field translation...</p>
+  </div>
+
 </body>
 </html>
+
 
